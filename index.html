@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elenco do Vasco 2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
+    .card {
+      background-color: #2b2b2b;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      border-top: 5px solid #d32f2f;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    p.mensagem {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #cccccc;
+      margin-bottom: 25px;
+      min-height: 80px;
+    }
+
+    button.botao {
+      background-color: #d32f2f;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button.botao:hover {
+      background-color: #b71c1c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Gigante da Colina - 2026 💢</h1>
+    <p class="mensagem">Clique no botão abaixo para conferir as novidades sobre o elenco do Vasco nesta temporada!</p>
+    <button class="botao">Ver Elenco 2026</button>
+  </div>
+
+  <script>
+    const botao = document.querySelector(".botao");
+    const mensagem = document.querySelector(".mensagem");
+
+    function mostrarMensagem() {
+      mensagem.innerHTML = "O elenco do Vasco em 2026 conta com grandes nomes no plantel! Destaques para a segurança do goleiro <strong>Léo Jardim</strong>, a garra do zagueiro <strong>Carlos Cuesta</strong>, a habilidade de <strong>Johan Rojas</strong> no meio-campo e o ataque veloz com <strong>Andrés Gómez</strong> e <strong>Facundo Colidio</strong>.";
+      botao.textContent = "Atualizado!";
+      botao.style.backgroundColor = "#2e7d32";
+    }
+
+    botao.addEventListener("click", mostrarMensagem);
+  </script>
+
+</body>
+</html>
